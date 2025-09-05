@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+  <nav class="navbar">
+  <ul>
+                
+                <li> <a  href="index.html">HOME</a></li>
+                <li> <a href="about.html">ABOUT</a></li>
+                <li> <a href="course.html">COURSES</a></li>
+                <li> <a href="projects.html">MY WORK</a></li>
+                <li> <a href="contact.html">CONTACT</a></li>
+            </ul>
+
+</nav>
+
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out using the form below:</p>
+
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div id="successMessage" class="hidden">✅ Your message has been sent!</div>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
